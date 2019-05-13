@@ -65,8 +65,8 @@ function low(arr){
   for (i = 0; i<arr.length; i++){
       if(arr[i] < newArr[0]){
           newArr.push(arr[i])
-      }else{
-          return "Number too Large"
+          newArr.reverse()
+          newArr.pop()
       }
   }return newArr
 }
